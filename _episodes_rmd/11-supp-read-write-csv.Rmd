@@ -83,7 +83,7 @@ This is perhaps the most important argument in `read.csv()`, particularly if you
 # using '<-'
 
 # First - reload the data with a header
-carSpeeds <- read.csv(file = 'data/car-speeds.csv')
+carSpeeds <- read.csv(file = 'data/car-speeds.csv', stringsAsFactors = TRUE)
 
 carSpeeds$Color <- ifelse(carSpeeds$Color == 'Blue', 'Green', carSpeeds$Color)
 carSpeeds$Color
